@@ -1,0 +1,18 @@
+<div class="movie">
+	<img class="movie-poster" ng-src="../content/images/{{$ctrl.movie.imdbID}}.jpg">
+	<div class="movie-details">
+		<h2 class="movie-title" ng-bind="$ctrl.movie.Title"></h2>
+
+		<div class="movie-metadata">
+			<span class="movie-rating" ng-bind="$ctrl.movie.Rated"></span>
+			<span class="movie-duration" ng-bind="$ctrl.movie.Runtime"></span>
+			<span class="ml-auto" ng-bind="$ctrl.movie.Released"></span>
+		</div>
+
+		<p class="movie-description" ng-bind="$ctrl.movie.Plot"></p>
+
+		<a class="btn btn-primary movie-link" target="_BLANK" ng-href="https://www.imdb.com/title/{{$ctrl.movie.imdbID}}">
+			View on IMDB
+		</a>
+	</div>
+</div>

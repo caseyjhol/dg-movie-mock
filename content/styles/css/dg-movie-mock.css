@@ -1,0 +1,107 @@
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #303436; }
+
+.ml-auto {
+  margin-left: auto; }
+
+[type=button]:not(:disabled),
+button:not(:disabled) {
+  cursor: pointer; }
+
+.btn {
+  color: #61696e;
+  text-decoration: none;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  border: solid 1px #c2cad0;
+  background: #f7f8f9;
+  border-radius: 0.25rem; }
+  .btn:not(.btn-active):hover {
+    background: #dadfe3; }
+  .btn.btn-active {
+    border-color: transparent;
+    background: #1a72b0;
+    color: #fff;
+    text-shadow: 0px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2); }
+  .btn.btn-primary {
+    border-color: transparent;
+    background: #f9b44a;
+    color: #fff;
+    padding: 0.75rem 3rem; }
+    .btn.btn-primary:hover {
+      background: #f7a019; }
+
+.btn-group {
+  position: relative;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  vertical-align: middle; }
+  .btn-group > .btn:not(:last-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; }
+  .btn-group > .btn:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: -1px; }
+
+.movie-list {
+  max-width: 696px; }
+
+.list-filter {
+  display: -webkit-box;
+  display: flex; }
+
+.movie {
+  background: #e8eBee;
+  border: 2px solid #303436;
+  margin: 1rem 0;
+  padding: 0.875rem;
+  display: -webkit-box;
+  display: flex;
+  border-radius: 0.5rem; }
+
+.movie-poster {
+  width: 140px;
+  height: 208px;
+  margin-right: 1.5rem;
+  border-radius: 0.5rem; }
+
+.movie-details {
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-flex: 1;
+          flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column; }
+
+.movie-title {
+  font-weight: 700;
+  border-bottom: solid 1px #8d989d;
+  margin: 0 0 0.5rem; }
+
+.movie-metadata {
+  display: -webkit-box;
+  display: flex;
+  font-size: 0.875rem; }
+
+.movie-rating {
+  color: #8d989d;
+  border: 1px solid #8d989d;
+  font-family: "Courier New", Courier, monospace;
+  padding: 0.125rem 0.375rem;
+  margin-right: 0.5rem;
+  border-radius: 0.25rem; }
+
+.movie-link {
+  position: absolute;
+  bottom: 0;
+  right: 0; }
+/*# sourceMappingURL=dg-movie-mock.css.map */

@@ -1,0 +1,24 @@
+{
+  "name": "dg-movie-mock",
+  "version": "1.0.0",
+  "description": "Displays a list of Batman movies, filterable by decade.",
+  "repository": "https://github.com/caseyjhol/dg-movie-mock",
+  "scripts": {
+    "start": "http-server ./",
+    "build:css": "node-sass --source-map true --include-path scss content/styles/scss/dg-movie-mock.scss content/styles/css/dg-movie-mock.css",
+    "build:prefix": "postcss content/styles/css/dg-movie-mock.css --use=autoprefixer --map --output=content/styles/css/dg-movie-mock.css",
+    "build-css": "npm run build:css && npm run build:prefix"
+  },
+  "author": "Casey Holzer",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.12.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.7.3",
+    "browserslist": "^4.8.2",
+    "node-sass": "^4.13.0",
+    "postcss": "^7.0.25",
+    "postcss-cli": "^6.1.3"
+  }
+}

@@ -1,0 +1,17 @@
+<div class="movie-list">
+	<div class="list-filter">
+		<div class="btn-group ml-auto">
+			<button 
+				type="button"
+				class="btn"
+				ng-repeat="decade in $ctrl.decades | orderBy:'-'"
+				ng-class="{'btn-active': $ctrl.currentDecade === decade}"
+				ng-bind="(decade) + '\'s'"
+				ng-click="$ctrl.filterMovies(decade)"></button>
+		</div>
+	</div>
+
+	<movie-item
+		ng-repeat="movie in $ctrl.movies | filter: { decade: $ctrl.currentDecade }"
+		movie="movie"></movie-item>
+</div>
